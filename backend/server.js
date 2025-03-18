@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/trades", require("./routes/tradeRoutes")); 
 
 app.get("/", (req, res) => {
     res.send("🚀 PaisaYaPani Backend is Running...");
